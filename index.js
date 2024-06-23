@@ -46,6 +46,23 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
 
+//Home Route
+app.get('/', (req, res) => {
+
+    try{
+     res.send({
+         status: 200,
+         message: "api berhasil di jalankan",
+         data: []
+     })
+    }catch(e){
+     res.send({
+         status: 500,
+         message: "api gagal di jalankan"
+     })
+    }
+ })
+
 // Define a route to handle data insertion
 app.post('/addPost', async (req, res) => {
     const { userId, idFilm, nama, namaFilm, kategoriFilm, latitude, longitude, img } = req.body;
