@@ -1,0 +1,22 @@
+POST http://localhost:8800/addPost
+content-type: application/json
+
+{
+    "userId":"58545785895",
+    "idFilm": "847575",
+    "nama" :"yudi",
+    "namaFilm": "Batman",
+    "kategoriFilm": "action",
+    "latitude": "87575",
+    "longitude": "9575",
+    "img": "47784874"
+
+}
+
+###
+GET http://localhost:8800/topIdFilms
+content-type: application/json
+
+###
+GET http://localhost:8800/getPosts
+content-type: application/json

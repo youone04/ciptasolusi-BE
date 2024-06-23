@@ -1,0 +1,23 @@
+{
+  "name": "ciptasolusi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^8.4.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "zlib": "^1.0.5"
+  }
+}
